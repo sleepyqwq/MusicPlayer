@@ -1,0 +1,96 @@
+/* 修复：使用正确的选择器 */
+.custom-progress .track {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-background-radius: 5;
+}
+
+.custom-progress .bar {
+    -fx-background-color: linear-gradient(to right, #00c6ff, #0072ff);
+    -fx-background-radius: 5;
+}
+
+/* 使进度条更容易拖拽 */
+.custom-progress {
+    -fx-cursor: hand; /* 鼠标悬停时显示手型光标 */
+    -fx-min-height: 12px; /* 增加高度便于拖拽 */
+    -fx-pref-height: 12px;
+    -fx-max-height: 12px;
+}
+
+/* 进度条悬停效果 */
+.custom-progress:hover .bar {
+    -fx-background-color: linear-gradient(to right, #00aaff, #0066ff);
+}
+
+/* 添加高度设置确保可见 */
+.custom-progress {
+    -fx-min-height: 8px;
+    -fx-pref-height: 8px;
+    -fx-max-height: 8px;
+}
+
+/* 让带有 transparent-scroll-pane 类的 ScrollPane 整体透明 */
+.transparent-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-border-color: transparent;
+}
+
+/* 让 transparent-scroll-pane 内部的 viewport 区域也透明 */
+.transparent-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/* ===== 新增播放列表样式 ===== */
+/* 列表滚动条样式 */
+.list-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-background-radius: 5;
+}
+
+.list-view .scroll-bar:vertical .increment-button,
+.list-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 0 0;
+}
+
+/* 列表项悬停效果 */
+.list-cell:filled:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 列表项选中效果 */
+.list-cell:filled:selected {
+    -fx-background-color: rgba(100, 180, 255, 0.3);
+}
+
+/* 保证 transparent-scroll-pane 中的所有 Label 都用 16px 大小 */
+.transparent-scroll-pane .label {
+    -fx-font-size: 16px;
+}
+
+/* 音量滑动条样式 - 透明背景 */
+.slider .track {
+    -fx-background-color: #E0E0E0;
+    -fx-background-radius: 2;
+}
+
+.slider .thumb {
+    -fx-background-color: #29B6F6;
+    -fx-background-radius: 10;
+    -fx-pref-width: 15;
+    -fx-pref-height: 15;
+}
+
+.slider .axis {
+    -fx-tick-label-fill: #616161;
+}

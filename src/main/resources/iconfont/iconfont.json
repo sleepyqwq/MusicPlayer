@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18939001",
+      "name": "快退",
+      "font_class": "kuaitui",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "18939002",
+      "name": "快进",
+      "font_class": "kuaijin",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "18939003",
+      "name": "播放中",
+      "font_class": "bofangzhong",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "18939004",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "18939006",
+      "name": "暂停",
+      "font_class": "zanting",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "18939007",
+      "name": "上一曲",
+      "font_class": "shangyiqu",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "18939008",
+      "name": "下一曲",
+      "font_class": "xiayiqu",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "18960093",
+      "name": "音量",
+      "font_class": "yinliang",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "18960322",
+      "name": "播放队列",
+      "font_class": "bofangduilie",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    }
+  ]
+}
