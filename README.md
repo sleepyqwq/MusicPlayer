@@ -20,12 +20,43 @@
 
 ![76217756387](assets/1762177563879.png)
 
+5.音量可以调节：
+
+![76251812253](assets/1762518122534.png)
+
 ## 运行环境
 
 JDK 21 及以上
 Maven 3.8 及以上
 操作系统建议为 64 位 Windows
-本机需安装 64 位 VLC 3.x，并确保与 JDK 位数一致
+本机需安装 64 位 VLC 3.x，并确保与 JDK 位数一致（项目中已经包含了VLC）
+
+## 使用说明
+
+1.使用idea打开项目
+
+2.更新pom文件
+
+3.请自行maven版本，Runner中jdk版本，Compiler中java版本
+
+4.重点！请将Main文件中的VlC路径更改
+
+![76251870869](assets/1762518708695.png)
+
+## 快速启动
+
+方式一 使用 Maven 直接运行
+在项目根目录执行
+
+```
+mvn clean javafx:run
+```
+
+方式二 在 IntelliJ IDEA 使用 Application 运行
+
+使用 `javafx-maven-plugin`，在 Maven 面板运行 `javafx:run`
+
+![76251786887](assets/1762517868870.png)
 
 ## 主要技术
 
@@ -58,29 +89,14 @@ MusicPlayer
 └─ pom.xml
 ```
 
-## 快速启动
-
-方式一 使用 Maven 直接运行
-在项目根目录执行
-
-```
-mvn clean javafx:run
-```
-
-方式二 在 IntelliJ IDEA 使用 Application 运行
-
-使用 `javafx-maven-plugin`，在 Maven 面板运行 `javafx:run`
-
-## 必要配置
-
-
-
 ## 媒体与歌词
 
 MusicList 目录下放置音频文件
 优先读取音频标签的标题与艺术家信息
 封面从标签内 Artwork 读取，不存在则使用默认 `images/disc.png`
 歌词支持同名 `.lrc` 文件，解析时间戳并按时间高亮与滚动
+
+![76251800376](assets/1762518003762.png)
 
 ## 核心交互
 
@@ -105,4 +121,7 @@ VLC 未安装或位数不匹配，或 `jna.library.path` 未指向包含 `libvlc
 
 音频与歌词文件名尽量保持“艺术家 - 标题”或“标题”规则
 同名 `.lrc` 与音频文件位于同一目录
+
+![76251803307](assets/1762518033073.png)
+
 资源命名统一小写与短横线分隔，便于维护
